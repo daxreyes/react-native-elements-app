@@ -17,6 +17,14 @@
   },
   "scripts": {
     "postinstall": "git submodule update",
-    "clean-install": "rm -rf node_modules && npm cache clean --force && watchman watch-del-all && npm install"
+    "clean-install": "rm -rf node_modules && npm cache clean --force && watchman watch-del-all && npm install",
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test": "node node_modules/jest/bin/jest.js --watch"
+  },
+  "devDependencies": {
+    "react-native-scripts": "^1.11.0"
   }
 }
