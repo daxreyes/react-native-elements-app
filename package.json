@@ -7,13 +7,13 @@
   "main": "main.js",
   "dependencies": {
     "@expo/vector-icons": "^6.1.0",
-    "expo": "^23.0.0",
+    "expo": "^25.0.0",
     "lodash": "^4.17.4",
-    "react": "16.0.0",
-    "react-native": "0.50.3",
+    "react": "^16.0.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-25.0.0.tar.gz",
     "react-native-elements": "^1.0.0-beta2",
     "react-native-ratings": "^5.3.0",
-    "react-navigation": "^1.0.0-beta.19"
+    "react-navigation": "^1.0.0-beta.27"
   },
   "scripts": {
     "postinstall": "git submodule update",
@@ -25,6 +25,8 @@
     "test": "node node_modules/jest/bin/jest.js --watch"
   },
   "devDependencies": {
+    "babel-plugin-import": "^1.2.0",
+    "metro-bundler": "^0.22.1",
     "react-native-scripts": "^1.11.0"
   }
 }
