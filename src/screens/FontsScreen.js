@@ -1,15 +1,7 @@
-import Expo from 'expo';
 import React, { Component } from 'react';
-import {
-  View,
-  ScrollView,
-  StyleSheet,
-  Platform,
-  Image,
-  TouchableHighlight,
-} from 'react-native';
+import { ScrollView, StyleSheet, Platform } from 'react-native';
 
-import { Text, Card, Divider, Icon } from 'react-native-elements';
+import { Text } from 'react-native-elements';
 
 const iOS_fonts = [
   'Academy Engraved LET',
@@ -82,7 +74,6 @@ const iOS_fonts = [
   'AvenirNextCondensed-Regular',
   'AvenirNextCondensed-UltraLight',
   'AvenirNextCondensed-UltraLightItalic',
-  'Bangla Sangam MN',
   'Baskerville',
   'Baskerville-Bold',
   'Baskerville-BoldItalic',
@@ -159,13 +150,6 @@ const iOS_fonts = [
   'GillSans-SemiBold',
   'GillSans-SemiBoldItalic',
   'GillSans-UltraBold',
-  'Gujarati Sangam MN',
-  'GujaratiSangamMN',
-  'GujaratiSangamMN-Bold',
-  'Gurmukhi MN',
-  'GurmukhiMN-Bold',
-  'Heiti SC',
-  'Heiti TC',
   'Helvetica',
   'Helvetica Neue',
   'Helvetica-Bold',
@@ -199,9 +183,6 @@ const iOS_fonts = [
   'HoeflerText-Regular',
   'Kailasa',
   'Kailasa-Bold',
-  'Kannada Sangam MN',
-  'KannadaSangamMN',
-  'KannadaSangamMN-Bold',
   'Khmer Sangam MN',
   'Kohinoor Bangla',
   'Kohinoor Devanagari',
@@ -237,9 +218,6 @@ const iOS_fonts = [
   'Optima-ExtraBlack',
   'Optima-Italic',
   'Optima-Regular',
-  'Oriya Sangam MN',
-  'OriyaSangamMN',
-  'OriyaSangamMN-Bold',
   'Palatino',
   'Palatino-Bold',
   'Palatino-BoldItalic',
@@ -281,7 +259,6 @@ const iOS_fonts = [
   'Symbol',
   'Tamil Sangam MN',
   'TamilSangamMN-Bold',
-  'Telugu Sangam MN',
   'Thonburi',
   'Thonburi-Bold',
   'Thonburi-Light',
@@ -318,8 +295,6 @@ const android_fonts = [
 
 class Fonts extends Component {
   render() {
-    const { navigation } = this.props;
-
     const fonts = Platform.OS === 'ios' ? iOS_fonts : android_fonts;
 
     return (
